@@ -15,11 +15,11 @@
     <a-scene cursor="rayOrigin: mouse" sound="src: #water; on: click; loop: true; volume: 1; rolloffFactor: 0" environment="preset: forest; groundTexture: walkernoise; fog: 0.9">
         
 
-        <a-assets>
-            <audio id="water" src="sound.mp3" data-audioType="background" autoplay ></audio>
-          </a-assets>
-        
-          <a-entity sound="src: #water"></a-entity>
+        <audio autoplay loop id="backgroundAudio">
+             <source src="/sound.mp3" type="audio/mpeg">
+      </audio>
+
+    
             <a-entity id="anchor" position="-0.07849 2.19339 -1.0747" rotation="" movement-controls="fly: true">
                 <a-entity camera="" look-controls="" wasd-controls="acceleration: 100" position="" rotation="61.65025875607661 -90.1835569535916 0" data-aframe-inspector-original-camera="">
     
